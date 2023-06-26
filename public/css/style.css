@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-purple: hsl(259, 100%, 65%);
+    --primary-light-red: hsl(0, 100%, 67%);
+
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-off-white: hsl(0, 0%, 94%);
+    --neutral-light-grey:hsl(0, 0%, 86%);
+    --neutral-smokey: hsl(0, 1%, 44%);
+    --neutral-off-black: hsl(0, 0%, 8%);
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+    background-color: var(--neutral-off-white);
+    
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    min-width: 375px;
+    width: 100%;
+
+}
+
+.calculator-container{
+    background-color: var(--neutral-white);
+    width: 350px;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 20px 20px 100px 20px;
+}
+
+/* SECTION CALENDAR */
+.calendar{
+    width: 100%;
+}
+
+#form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-weight: 600;
+    color: var(--neutral-smokey);
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    height: 120px;
+    }
+
+label input{
+    padding: 10px;
+    width: 90px;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-light-grey);
+    color: var(--neutral-off-black);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/* CONTAINER BUTTON */
+
+.container-button{
+    margin: 30px 0px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+
+.line{
+    background-color: var(--neutral-light-grey);
+    width: 100%;
+    height: 2px;
+    
+}
+
+.btn{
+    background-color:var(--primary-purple) ;
+    border-radius: 50%;
+    border: none;
+    padding: 20px;
+    position: absolute;
+    
+}
+.btn:hover{
+    background-color: var(--neutral-off-black);
+}
+.btn img{
+    width: 30px;
+    height: 30px;
+    
+}
+
+
+/* RESULT  */
+
+.result{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 55px;
+    
+}
+
+.result p{
+   font-size: 3rem;
+   font-weight: 900;
+   font-style: italic;
+   color: var(--primary-purple);
+}
+
+.result p span{
+    color: var(--neutral-off-black);
+}
+
+.error{
+        color: var(--primary-light-red);
+        font-size: 0.6rem;
+        font-weight: 400;
+        font-style: italic;
+        letter-spacing: 0px;
+        margin-top: 3px;
+        
+    }
+
+  footer {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+      
+   
+  }
+
+  footer p{
+    font-weight: 600; 
+    font-size: 0.8rem;
+  }
+
+  footer p span{
+    color: var(--primary-purple);
+  } 
+
+
+@media screen and (min-width:700px) {
+    
+    .calculator-container{
+        width: 650px;
+        padding: 50px 50px;
+        border-radius: 20px 20px 157px 20px; ;
+        
+    }
+
+    #form{
+        justify-content: flex-start;
+        
+    }
+
+   
+
+    label input {
+        width: 120px;
+        font-size: 1.8rem;
+    }
+
+    .container-button{
+        justify-content: flex-end;
+        margin-top: 50px;
+
+    }
+
+    .btn{
+        padding: 25px;
+        cursor: pointer;
+    }
+
+    .btn img{
+    width: 40px;
+    height: 40px;
+}
+
+    .result p{
+        font-size: 4.5rem;
+        line-height: 75px;
+        
+    }
+
+    
+
+
+}
+
+
+

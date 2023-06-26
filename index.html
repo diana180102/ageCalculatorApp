@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Age Calculator</title>
+</head>
+<body>
+      <main class="main-container">
+        <div class="calculator-container">
+            <section class="calendar">
+                <form action="" id="form" >
+            
+                     <label for="day" >
+                        DAY
+                        <input id="day" oninput="this.value = this.value.replace(/[^0-9]/g, '')" type="text" name="day" placeholder="DD">
+                    </label>
+            
+                    <label for="month">
+                        MONTH
+                        <input id="month" oninput="this.value = this.value.replace(/[^0-9]/g, '')"  type="text"name="month" placeholder="MM">
+                    </label>
+            
+                    <label for="year">
+                        YEAR
+                        <input id="year" oninput="this.value = this.value.replace(/[^0-9]/g, '')"  type="text" name="year" placeholder="YYYY">
+                    </label>
+            
+            
+                </form>
+            </section>
+            <section class="container-button">
+                <div class="line"></div>
+                <button class="btn" type="submit">
+                    <img src="public/assets/images/icon-arrow.svg" alt="arrow-icon">
+                </button>
+            </section>
+            <section class="result">
+                <p class="years">-- <span>years</span></p>
+                <p class="months">-- <span>months</span></p>
+                <p class="days">-- <span>days</span></p>
+            
+            </section>
+        </div>
+      </main>
+      <footer>
+         <p> Coded by <span>Diana Mayorga</span></p>
+         <p> Challenge by <span>Frontend Mentor</span>. 
+      </footer>
+    <script src="public/js/app.js"></script>
+</body>
+</html>
